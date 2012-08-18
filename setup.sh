@@ -1,3 +1,13 @@
+## execute as root user
+# groupadd ka
+# cp -r /etc/skel /home/ka
+# useradd ka -d /home/ka -g ka -s /bin/bash
+# chown -R ka:ka /home/ka
+# passwd ka
+# echo 'ka ALL=(ALL) ALL' >> /etc/sudoers
+
+# logout and login as ka
+
 sudo aptitude update
 sudo aptitude safe-upgrade
 
